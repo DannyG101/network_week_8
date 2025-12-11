@@ -4,6 +4,7 @@ def user_ip_input():
         ip_input = input("Please enter an ip address ")
         if len(ip_to_int_list(ip_input)) == 4:
             user_choice = True
+    return ip_input
 
 
 def user_mask_input():
@@ -12,6 +13,7 @@ def user_mask_input():
         mask_input = input("Please enter a mask ")
         if len(ip_to_int_list(mask_input)) == 4:
             user_choice = True
+    return mask_input
 
 
 def ip_to_int_list(ip_address):

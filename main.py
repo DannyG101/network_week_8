@@ -11,12 +11,22 @@ if __name__ == "__main__":
     prefix = utils.mask_to_prefix(mask)
     class_type = utils.check_class(ip, mask)
 
-    print(output_string.format_input_ip(ip))
-    print(output_string.format_subnet_mask(mask))
-    print(output_string.format_classful_status(class_type))
-    print(output_string.format_network_address(network))
-    print(output_string.format_broadcast_address(broadcast))
-    print(output_string.format_num_hosts(num_of_hosts))
-    print(output_string.format_cidr_mask(prefix))
+    a = output_string.format_input_ip(ip)
+    b = output_string.format_subnet_mask(mask)
+    c = output_string.format_classful_status(class_type)
+    d = output_string.format_network_address(network)
+    e = output_string.format_broadcast_address(broadcast)
+    f = output_string.format_num_hosts(num_of_hosts)
+    g = output_string.format_cidr_mask(prefix)
+
+
+
+
+
+
+    with open(f"{network}.txt", "w") as f:
+        f.write(f"{a}{b}{c}{d}{e}{f}{g}")
+
+
 
 
