@@ -1,1 +1,3 @@
-# network_week_8
+Daniel Goldberg
+209428713
+Arava
